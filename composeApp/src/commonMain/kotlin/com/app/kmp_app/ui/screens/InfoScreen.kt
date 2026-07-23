@@ -1,15 +1,11 @@
 package com.app.kmp_app.ui.screens
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
 import cafe.adriel.voyager.core.screen.Screen
 import network.chaintech.sdpcomposemultiplatform.sdp
@@ -24,6 +20,7 @@ class InfoScreen : Screen {
                 .padding(16.sdp)
                 .verticalScroll(rememberScrollState())
         ) {
+            Spacer(modifier = Modifier.height(42.sdp))
             Text(
                 text = "About News Aggregator",
                 style = MaterialTheme.typography.titleLarge,
