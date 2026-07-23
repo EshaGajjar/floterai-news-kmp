@@ -1,0 +1,45 @@
+# Kotlin/Android Studio
+*.iml
+.idea/
+.gradle/
+local.properties
+.DS_Store
+
+# Gradle build
+/build/
+**/build/
+
+# Keep build inside source dirs (don’t ignore actual source builds)
+!src/**/build/
+
+# Kotlin/Compose
+.kotlin/
+
+# Android generated files
+captures/
+.externalNativeBuild/
+.cxx/
+*.dex
+*.apk
+*.ap_
+*.aab
+*.class
+
+# IntelliJ project files
+*.ipr
+*.iws
+
+# Xcode / iOS
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+xcuserdata/
+
+# JetBrains Fleet
+.fleet/
+
+# Misc
+*.log
