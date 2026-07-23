@@ -44,6 +44,19 @@ class HomeScreen : Screen {
         Column(
             modifier = Modifier.fillMaxSize()
         ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 16.sdp, bottom = 8.sdp),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = "Home",
+                    style = MaterialTheme.typography.titleLarge,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+
             @Suppress("DEPRECATION")
             SearchBar(
                 query = searchQuery,
