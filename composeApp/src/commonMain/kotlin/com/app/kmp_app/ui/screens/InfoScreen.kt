@@ -32,40 +32,74 @@ class InfoScreen : Screen {
             Spacer(modifier = Modifier.height(16.sdp))
             Text(
                 text = """
-                                This application is a News Aggregator built with Kotlin Multiplatform and Compose Multiplatform.
-                                
-                                Features:
-                                - Trending news from the Metropolitan Museum of Art (initially JSON).
-                                - Search functionality with debouncing.
-                                - Local search history using SQLDelight.
-                                - Responsive UI with Material 3.
-                                - Dark mode support.
-                                - Platform-specific URL opening using Chrome Custom Tabs on Android.
-                                
-                                Architecture:
-                                The app follows Clean Architecture principles with MVVM pattern.
-                                - Data Layer: Repository pattern with Local and Remote data sources.
-                                - Domain Layer: Models and Repository interfaces.
-                                - UI Layer: Compose Multiplatform with Voyager for navigation.
-                                - Dependency Injection: Koin for KMP.
-                                
-                                This assessment demonstrates proficiency in:
-                                1. Kotlin Multiplatform (KMP)
-                                2. Compose Multiplatform
-                                3. Clean Architecture & SOLID principles
-                                4. Advanced State Management with Flow/StateFlow
-                                5. Local Database (SQLDelight)
-                                6. Networking (Ktor)
-                                7. Dependency Injection (Koin)
-                                
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                
-                                Additional content to make it a long scrollable text as requested:
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                                
-                            """.trimIndent(),
+Welcome to News Aggregator
+
+News Aggregator is a modern news application designed to help you discover and read the latest headlines in a simple, fast, and intuitive way. Whether you're interested in technology, business, sports, entertainment, or world news, the app provides an organized reading experience with powerful search capabilities.
+
+Features
+
+• Browse the latest trending news.
+• Search articles using keywords.
+• View and reuse your recent search history.
+• Pull down to refresh the latest headlines.
+• Preview article details before opening.
+• Open full articles in your preferred web browser.
+• Responsive interface for different screen sizes.
+• Clean Material Design 3 user experience.
+
+Getting Started
+
+Home
+
+The Home screen displays the latest trending news. Simply scroll through the feed and tap on any article to view more details.
+
+Search
+
+Use the search bar to find articles related to any topic. Recent searches are stored locally so you can quickly access them again without retyping.
+
+Article Details
+
+Selecting an article opens a preview dialog containing the article title, summary, and a button to open the complete article in your browser.
+
+Refresh
+
+Pull down on the Home screen to refresh the feed and retrieve the latest available news.
+
+Privacy
+
+Your recent search history is stored locally on your device to improve your experience. The application does not collect or share personal information.
+
+Technology
+
+This application is built using modern Kotlin Multiplatform technologies and follows the MVVM architectural pattern.
+
+Core technologies include:
+
+• Kotlin Multiplatform (KMP)
+• Compose Multiplatform
+• MVVM Architecture
+• Ktor Networking
+• SQLDelight Local Database
+• Koin Dependency Injection
+• Voyager Navigation
+• Kotlin Coroutines & StateFlow
+• Material Design 3
+
+Our Goal
+
+News Aggregator aims to provide a fast, reliable, and enjoyable reading experience while demonstrating modern mobile development practices, clean architecture, and responsive user interface design.
+
+Thank you for using News Aggregator.
+
+Stay informed.
+Stay curious.
+Stay connected.
+
+Version 1.0.0
+    """.trimIndent(),
                 style = MaterialTheme.typography.bodyMedium
             )
+            Spacer(modifier = Modifier.height(84.sdp))
         }
     }
 }

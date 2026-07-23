@@ -30,7 +30,7 @@ class MainScreen : Screen {
                     }
                 }
             ) { _ ->
-                Box(modifier = Modifier.background(MaterialTheme.colorScheme.background).padding(top = 36.sdp)) {
+                Box(modifier = Modifier.background(MaterialTheme.colorScheme.background)) {
                     CurrentTab()
                 }
             }

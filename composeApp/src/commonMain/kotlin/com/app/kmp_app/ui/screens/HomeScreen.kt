@@ -43,7 +43,6 @@ class HomeScreen : Screen {
 
         Column(
             modifier = Modifier.fillMaxSize()
-                .padding(top = 24.sdp)
         ) {
             @Suppress("DEPRECATION")
             SearchBar(
